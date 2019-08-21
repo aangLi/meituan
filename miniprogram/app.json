@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/user/user",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -11,14 +12,57 @@
     "pages/openapi/serverapi/serverapi",
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
-    "pages/user/user"
+    
+    "pages/recommend/recommend",
+    "pages/search/search",
+    "pages/talk/talk"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#ab956d",
     "navigationBarTitleText": "拼多多",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#ab956d",
+    "borderStyle": "black",
+    "backgroundColor": "#f5f5f5",
+    "selectedindex": 1,
+    "list": [
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "/images/icons/gerenzhongxin.png",
+        "selectedIconPath": "/images/icons/gerenfill.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "/images/icons/tuijian2.png",
+        "selectedIconPath": "/images/icons/tuijian.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/images/icons/search.png",
+        "selectedIconPath": "/images/icons/sousuo.png"
+      },
+      {
+        "pagePath": "pages/talk/talk",
+        "text": "聊天",
+        "iconPath": "/images/icons/liaotian2.png",
+        "selectedIconPath": "/images/icons/liaotian.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/icons/index-0.png",
+        "selectedIconPath": "/images/icons/home.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

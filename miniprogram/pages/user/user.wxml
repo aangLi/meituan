@@ -1,2 +1,153 @@
 <!--miniprogram/pages/user/user.wxml-->
-<text>miniprogram/pages/user/user.wxml</text>
+<view class="top-news">
+    <navigator url="">
+        <view class="red-package">
+            <text >官方送钱</text>
+            <text >10~188元</text>
+            <input type="text">16:32:09</input>
+            <view class="red-bag">
+                <image url="" />
+            </view>
+       </view>
+    </navigator>
+</view>
+<view class="head-sculpture">
+    <open-data type="userAvatarUrl" class="thumb" />
+    <view class="name">
+        <open-data type="userNickName" lang="zh_CN" class="nickname" />
+        <button class="more">更多资料</button>
+    </view>
+    <view class="back-money">
+        <navigator url="">
+            <image url="" />
+            <text >拼单返现</text>
+        </navigator>
+    </view>
+</view>
+<view class="coupon">
+    <navigator url="">
+        <view class="save-money">
+            <text >省钱月卡</text>
+            <text >帮你省194元</text>
+            <button class="btn" >领20元无门槛</button>
+        </view>
+    </navigator>
+</view>
+<view class="my-orders">
+    <view class="order-title">
+        <text class="my-order">我的订单</text>
+        <text class="wacth-all">查看全部</text>
+    </view>
+    <view class="wait-lists">
+        <view class="wait-pay">
+            <image url="" />
+            <text >待付款</text>
+        </view>
+        <view class="wait-share">
+            <image url="" />
+            <text >待付款</text>
+        </view>
+        <view class="wait-sendgoods">
+            <image url="" />
+            <text >待付款</text>
+        </view>
+        <view class="wait-recivegoods">
+            <image url="" />
+            <text >待付款</text>
+        </view>
+        <view class="wait-evaluate">
+            <image url="" />
+            <text >待付款</text>
+        </view>
+    </view>
+</view>
+<view class="red-nav">
+    <navigator url="">
+        <image url="" />
+        <text >优惠券</text>
+    </navigator>
+    <navigator url="">
+        <image url="" />
+        <text >优惠券</text>
+    </navigator>
+    <navigator url="">
+        <image url="" />
+        <text >优惠券</text>
+    </navigator>
+    <navigator url="">
+        <image url="" />
+        <text >优惠券</text>
+    </navigator>
+    <navigator url="">
+        <image url="" />
+        <text >优惠券</text>
+    </navigator>
+</view>
+<view class="yellow-nav">
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+    <navigator >
+        <image url="" />
+        <text >1分抽奖</text>
+    </navigator>
+</view>
+<view class="go">
+    <view class="go-pic">
+        <image url="" />
+    </view>
+</view>
+<view class="goods">
+    <view class="selected-recommendation">
+        <image src=""/>
+        <text>精品推荐</text>
+    </view>
+    <view class="goods-lists">
+        <navigator url="">
+            <view class="goods1">
+                <image url="" />
+                <view class="goods-describe">
+                    <view class="describe-title">印花50卷</view>
+                    <view >极速退款</view>
+                    <view >满59返3</view>
+                    <view class="price">￥ 7.5</view>
+                    <text >已拼10万+件</text>
+                    <image url="" />
+                </view>
+            </view>
+        </navigator>
+    </view>
+</view>
