@@ -1,1 +1,161 @@
 /* miniprogram/pages/user/user.wxss */
+.top-news {
+    height: 70rpx;
+    border: 3px solid yellow;
+    line-height: 70rpx;
+}
+.red-package{
+    height: 70rpx;
+    background-color: #FF8D1A;
+    position: relative;
+}
+.give-money{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 25rpx;
+    letter-spacing: 2rpx;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+.money{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2rpx;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    padding-left: 4rpx;
+}
+.red-package input{
+    position: absolute;
+    top: 10rpx;
+    right: 90rpx;
+    display: inline-block;
+    width: 200rpx;
+    border: none;
+    outline: none;
+}
+.red-bag{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120rpx;
+    height: 100%;
+}
+.red-bag image{
+    height: 100%;
+    width: 100%;
+}
+.head-sculpture{
+    position: relative;
+    height: 160rpx;
+    line-height: 100rpx;
+    padding:30rpx 30rpx 30rpx 150rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    color: #000;
+}
+.head-sculpture .thumb{
+    position: absolute;
+    left: 30rpx;
+    top: 24rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.name{
+    display: inline-block;
+    height: 100%;
+}
+.nickname{
+    font-size: 14px;
+    position: absolute;
+    top: 10rpx;  
+}
+.name button{
+    position: absolute;
+    bottom:50rpx;
+    display: inline-block;
+    height: 25rpx;
+    text-align: center;
+    line-height: 25rpx;
+    background-color: #FC8B1A;
+    color: #fff;
+    font-size: 7px;
+}
+.back-money{
+    position: absolute;
+    right: 10rpx;
+    top: 40rpx;
+    display: inline-block;
+    width: 200rpx;
+    height: 50rpx;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 50rpx;
+}
+.back-money image{
+    height: 40rpx;
+    width: 40rpx;
+    position: absolute;
+    top: 4rpx;
+    left: 18rpx;
+}
+.back-money text{
+    font-size: 12px;
+    position: absolute;
+    top: -1rpx;
+    right: 20rpx;
+    letter-spacing: 2rpx;
+}
+.coupon{
+    height: 80rpx;
+    width: 100%; 
+    border-bottom: 1px solid rgba(254, 1, 1, 0.096);
+}
+.save-money{
+    position: relative;
+    margin: 0 auto;
+    height: 80rpx;
+    width: 680rpx;
+    line-height: 80rpx;
+    background-color: rgba(254, 1, 1, 0.096);
+    border-radius: 20rpx 20rpx 0 0;
+}
+.save-money-card{
+    color: red;
+    font-size: 12px;
+    padding-left: 20rpx;
+    padding-right: 10rpx;
+}
+.help-save-money{
+    color: red;
+    font-size: 9px;  
+}
+.save-money button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    color: #fff;
+    border-radius: 40rpx;
+    display: inline-block;
+    height: 50rpx;
+    width: 220rpx;
+    line-height: 50rpx;
+    font-size: 11px;
+    position: absolute;
+    top: 20rpx;
+    right: 60rpx;
+}
+.save-money::after{
+    content: '';
+    position: absolute;
+    top: 34rpx;
+    right: 30rpx;
+    height: 18rpx;
+    width: 18rpx;
+    border-width: 2rpx 2rpx 0 0;
+    border: 2rpx solid red;
+    transform: rotate(45deg);
+}
