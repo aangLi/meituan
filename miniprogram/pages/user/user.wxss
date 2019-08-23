@@ -60,7 +60,8 @@
     top: 24rpx;
     width: 100rpx;
     height: 100rpx;
-    
+    /* border: 1px solid #000; */
+    overflow: hidden;
     border-radius: 50%;
 }
 .name{
@@ -156,7 +157,107 @@
     right: 30rpx;
     height: 18rpx;
     width: 18rpx;
-    border-width: 2rpx 2rpx 0 0;
     border: 2rpx solid red;
+    border-width: 2rpx 2rpx 0 0;
     transform: rotate(45deg);
+}
+.my-orders{
+    height: 240rpx;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.041);
+}
+.order-title{
+    position: relative;
+}
+.my-order{
+    position: absolute;
+    top: 30rpx;
+    left: 40rpx;
+    color: #000;
+    font-size: 12px;
+}
+.wacth-all{
+    position: absolute;
+    top: 30rpx;
+    right: 60rpx;
+    color: darkgrey;
+    font-size: 10px;
+}
+.order-title::after{
+    content: '';
+    position: absolute;
+    top: 34rpx;
+    right: 30rpx;
+    height: 18rpx;
+    width: 18rpx;
+    border: 2rpx solid darkgrey;
+    border-width: 2rpx 2rpx 0 0;
+    transform: rotate(45deg);
+}
+.wait-lists{
+    display: flex; 
+    margin-top: 100rpx;
+}
+.flex{
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.flex image{
+    height: 50rpx;
+    width: 50rpx;
+}
+.flex text{
+    margin-top: 20rpx;
+    display: inline-block;
+    font-size: 11px;
+    color: #000;
+}
+.red-nav{
+    display: flex; 
+    border-bottom: 5px solid rgba(0, 0, 0, 0.041);
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+}
+.yellow-nav{
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+}
+.yellow-nav-1,.yellow-nav-2{
+    display: flex;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx; 
+}
+.go{
+    height: 160rpx;
+    width: 100%;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+}
+.go-pic{
+    height: 100%;
+    width: 100%;
+    border-radius: 40rpx;
+    overflow: hidden;
+}
+.go-pic image{
+    height: 100%;
+    width: 100%;
+}
+.goods{
+
+}
+.selected-recommendation{
+    height: 100rpx;
+    text-align: center;
+    padding-top: 30rpx;
+}
+.selected-recommendation image{
+    height: 30rpx;
+    width: 30rpx;
+}
+.selected-recommendation text{
+    color: red;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding-left: 10rpx;
 }
