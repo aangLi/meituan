@@ -1,2 +1,47 @@
 /**index.wxss**/
-
+/* .section-icon {
+} */
+/* .section-search {
+    background-color: #ededed;
+    width: 258px;
+    height: 33px;
+    border-radius: 18px;
+} */
+.navigation-bar {
+    overflow-x: scroll;
+}
+.navigation-lists {
+    width: 100%;
+    white-space: nowrap;
+}
+/* 保持超出者隐藏，可以滚动，但是又隐藏滚动条的方法 */
+.navigation-bar::-webkit-scrollbar {
+    display: none;
+}
+.nav-item {
+    display: inline-block; 
+    font-size: 15px;
+    margin: 5px 5px 0 5px;
+    width: 40px;
+    height: 40px;
+}
+.classification-icon {
+    width: 90%;
+    margin-left: 5%;
+}
+.classification-lists {
+    overflow: hidden;
+}
+.classification-item {
+    display: inline-block;
+    margin-top: 10px;
+    width: 20%;
+    height: 55px;
+    text-align: center;
+}
+.classification-item text{
+    font-size: 11px;
+    display: block;
+    width: 46px;
+    margin: 0 auto;
+}
