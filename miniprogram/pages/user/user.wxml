@@ -34,7 +34,7 @@
     </navigator>
 </view>
 <view class="my-orders">
-    <navigator url="" class="order-title">
+    <navigator url="../orders/orders" class="order-title">
         <text class="my-order">我的订单</text>
         <text class="wacth-all">查看全部</text>
     </navigator>
@@ -53,7 +53,7 @@
         </navigator>
         <navigator url="" class="flex wait-recivegoods">
             <image src="../../images/icons/daishouhuo.png" />
-            <text>待收获</text>
+            <text>待收货</text>
         </navigator>
         <navigator url="" class="flex wait-evaluate">
             <image src="../../images/icons/daipingjia.png" />

@@ -1,0 +1,46 @@
+/* miniprogram/pages/orders/orders.wxss */
+.serch-orders{
+    height: 80rpx;
+    width: 100%;
+    background-color: rgba(171, 149, 109, 0.226);
+    padding-top: 8rpx;
+}
+.search-a{
+    width: 720rpx;
+    height: 47rpx;
+    margin: 10rpx auto;
+}
+.search{
+    border: none;
+    outline: none;
+    border-radius: 20rpx;
+    background-color: #fff;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.521);
+    font-size: 12px;
+    position: relative;
+}
+.search image{
+    height: 40rpx;
+    width: 40rpx;
+    position: absolute;
+    top: 12rpx;
+    left: 226rpx;
+}
+.orders-nav{
+    height: 80rpx;
+    border-bottom: 1px solid rgba(171, 149, 109, 0.575);
+    display: flex;
+    
+}
+.orders-nav text{
+    height: 80rpx;
+    line-height: 80rpx;
+    flex: 1;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+}

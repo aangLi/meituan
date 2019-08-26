@@ -1,0 +1,16 @@
+<!--miniprogram/pages/orders/orders.wxml-->
+<view class="serch-orders">
+    <navigator url="" class="search-a">
+        <input  placeholder="搜索订单" class="search">
+            <image src="../..//images/icons/search.png" />
+        </input>
+    </navigator> 
+</view>
+<view class="orders-nav">
+    <text class="all">全部</text>
+    <text class="pay">待付款</text>
+    <text class="share">待分享</text>
+    <text class="send">待发货</text>
+    <text class="recive">待收货</text>
+    <text class="evaluate">待评价</text>
+</view>
