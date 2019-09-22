@@ -258,3 +258,15 @@
     letter-spacing: 2px;
     padding-left: 10rpx;
 }
+.goods-lists {
+    width: 100%;
+}
+.goods-lists .goods1 {
+    float: left;
+    width: 50%;
+    height: 800rpx;
+}
+.goods1 .goodsImg{
+    height: 350rpx;
+    width: 350rpx;
+}
