@@ -140,36 +140,36 @@
     <text>精选推荐</text>
   </view>
   <view class="goods-lists">
-    <navigator url="">
+    <navigator url="" >
       <view class="goods1">
-        <image src="" />
+        <image src="http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg" class="goodsImg"/>
         <view class="goods-describe">
           <view class="describe-title">印花50卷</view>
-          <view>极速退款</view>
-          <view>满59返3</view>
-          <view>立减5元</view>
-          <view class="price">￥ 7.5</view>
-          <text>已拼10万+件</text>
+          <view class="describe-detail">极速退款</view>
+          <view class="describe-detail">满59返3</view>
+          <view class="describe-detail">立减5元</view>
+          <view class="price">￥7.5</view>
+          <text class="num">已拼10万+件</text>
         </view>
         <view class="users">
-          <image src="" />
+          <image src="" class="usersImg"/>
         </view>
       </view>
     </navigator>
 
     <navigator url="">
       <view class="goods1">
-        <image src=""  class="goodsImg"/>
+        <image src="http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg"  class="goodsImg"/>
         <view class="goods-describe">
           <view class="describe-title">印花50卷</view>
-          <view>极速退款</view>
-          <view>满59返3</view>
-          <view>立减5元</view>
-          <view class="price">￥ 7.5</view>
-          <text>已拼10万+件</text>
+          <view class="describe-detail">极速退款</view>
+          <view class="describe-detail">满59返3</view>
+          <view class="describe-detail">立减5元</view>
+          <view class="price">￥7.5</view>
+          <text class="num">已拼10万+件</text>
         </view>
         <view class="users">
-          <image src="" class="usersImg"/>
+          <image src="http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg" class="usersImg"/>
         </view>
       </view>
     </navigator>
