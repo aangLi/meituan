@@ -1,81 +1,112 @@
 <!-- index.wxml -->
 <view class="main">
-    <!-- <view class="nav-search">
-        <form bindsubmit="formSubmit" bindreset="formReset">
-            <view class="section-icon">
-                <image src="../../images/icons/nav_sousuo.png" style="width: 23px; height: 23px; background-color: #eeeeee;"/>
-            </view>
-             <view class="section-search">
-                <input name="input" placeholder="搜索你想要的商品" placeholder-style="font-size:14px;text-align: center;line-height: normal;"/>
-            </view>
-        </form>
-    </view> -->
-    <view class="navigation-bar">
-        <ul class="navigation-lists">
-            <li class="nav-item">热门</li>
-            <li class="nav-item">男装</li>
-            <li class="nav-item">手机</li>
-            <li class="nav-item">食品</li>
-            <li class="nav-item">电器</li>
-            <li class="nav-item">鞋包</li>
-            <li class="nav-item">百货</li>
-            <li class="nav-item">女装</li>
-            <li class="nav-item">汽车</li>
-            <li class="nav-item">水果</li>
-        </ul>
-    </view>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-        <swiper-item>
-            <image src="{{item}}" class="slide-image" width="355" height="150" />
-        </swiper-item>
-        </block>
-    </swiper>
-    <view class="classification-icon">
-        <view class="classification-first">
-            <ul class="classification-lists">
-                <li class="classification-item">
-                    <image src="../../images/icons/clock.png" style="width: 34px; height: 34px;"/>
-                    <text>限时秒杀</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/pinpaiqingcang.png" style="width: 34px; height: 34px;"/>
-                    <text>断码清仓</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/yusan.png" style="width: 34px; height: 34px;"/>
-                    <text>多多矿场</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/pinpaiguanli.png" style="width: 34px; height: 34px;"/>
-                    <text>品牌馆</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/shulin.png" style="width: 34px; height: 34px;"/>
-                    <text>多多果园</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/phone.png" style="width: 34px; height: 34px;"/>
-                    <text>充值中心</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/temai.png" style="width: 34px; height: 34px;"/>
-                    <text>9块9特卖</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/qianbao.png" style="width: 34px; height: 34px;"/>
-                    <text>百亿补贴</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/servicedianqichengfuwu.png" style="width: 34px; height: 34px;"/>
-                    <text>电器城</text>
-                </li>
-                <li class="classification-item">
-                    <image src="../../images/icons/lianyiqun.png" style="width: 34px; height: 34px;"/>
-                    <text>爱逛街</text>
-                </li>
-            </ul>
-        </view>
-        <view class="Classification-second"></view>
-    </view>
+<!-- 头部 header -->
+	<view class="navigation-header">
+		<icon  type="search"/>
+		<input maxlength="6" placeholder="搜索你想要的商品" placeholder-style="color:red;" />
+	</view>
+	<!-- 水平分栏 -->
+	<scroll-view class="navigation-bar" scroll-x style="width: 100%;white-space: nowrap;">
+		<navigator class="nav-item nav-item-undernavigatorne">热门</navigator>
+		<navigator class="nav-item">男装</navigator>
+		<navigator class="nav-item">手机</navigator>
+		<navigator class="nav-item">食品</navigator>
+		<navigator class="nav-item">电器</navigator>
+		<navigator class="nav-item">鞋包</navigator>
+		<navigator class="nav-item">百货</navigator>
+		<navigator class="nav-item">女装</navigator>
+		<navigator class="nav-item">汽车</navigator>
+		<navigator class="nav-item">水果</navigator>
+	</scroll-view>
+	<!-- 展示的content -->
+	<scroll-view scroll-y>
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#ff0000" indicator-color="#bbb" circular="{{circular}}" class="swiper">
+			<block wx:for="{{imgUrls}}" wx:key="{{index}}">
+					<swiper-item>
+							<image src="{{item}}" class="slide-image" width="400" height="150" />
+					</swiper-item>
+			</block>
+		</swiper>
+		<scroll-view class="classification-icons" scroll-x bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+			<view class="classification-lists">
+				<navigator class="classification-item">
+						<image src="../../images/icons/clock.png" style="width: 70rpx; height: 70rpx;" />
+						<text>限时秒杀</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/pinpaiqingcang.png" style="width: 70rpx; height: 70rpx;" />
+						<text>断码清仓</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/yusan.png" style="width: 70rpx; height: 70rpx;" />
+						<text>多多矿场</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/pinpaiguanli.png" style="width: 70rpx; height: 70rpx;" />
+						<text>品牌馆</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/shulin.png" style="width: 70rpx; height: 70rpx;" />
+						<text>多多果园</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/kanjiahuodong.png" style="width: 70rpx; height: 70rpx;" />
+						<text>砍价免费拿</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/dianzan.png" style="width: 70rpx; height: 70rpx;" />
+						<text>买过都说好</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/shuiguo.png" style="width: 70rpx; height: 70rpx;" />
+						<text>水果超市</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/phone.png" style="width: 70rpx; height: 70rpx;" />
+						<text>充值中心</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/temai.png" style="width: 70rpx; height: 70rpx;" />
+						<text>9块9特卖</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/qianbao.png" style="width: 70rpx; height: 70rpx;" />
+						<text>百亿补贴</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/servicedianqichengfuwu.png" style="width: 70rpx; height: 70rpx;" />
+						<text>电器城</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/lianyiqun.png" style="width: 70rpx; height: 70rpx;" />
+						<text>爱逛街</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/feiji.png" style="width: 70rpx; height: 70rpx;" />
+						<text>多多旅行</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/choujiang.png" style="width: 70rpx; height: 70rpx;" />
+						<text>抽奖活动</text>
+				</navigator>
+				<navigator class="classification-item">
+						<image src="../../images/icons/juan.png" style="width: 70rpx; height: 70rpx;" />
+						<text>领卷中心</text>
+				</navigator>
+			</view>
+		</scroll-view>
+		<view class="indicator-point">
+			<view class="point-box">
+					<view class="point"></view>
+					<view class="point"></view>
+			</view>
+		</view>
+	</scroll-view>
+	<!-- 底部页面切换栏 -->
+	<view class="footer fix">
+		<view class="icons-item">
+			<icon />
+			<text></text>
+		</view>
+	</view>
 </view>

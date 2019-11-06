@@ -1,47 +1,83 @@
 /**index.wxss**/
-/* .section-icon {
-} */
-/* .section-search {
+.navigation-header {
+    position: relative;
+    display: inline-block;
+    width: 458rpx;
+    height: 70rpx;
+    margin-left: 50rpx;
+    margin-top: 70rpx;
     background-color: #ededed;
-    width: 258px;
-    height: 33px;
-    border-radius: 18px;
-} */
-.navigation-bar {
-    overflow-x: scroll;
+    border-radius: 36rpx;
 }
-.navigation-lists {
-    width: 100%;
-    white-space: nowrap;
-}
-/* 保持超出者隐藏，可以滚动，但是又隐藏滚动条的方法 */
-.navigation-bar::-webkit-scrollbar {
-    display: none;
+.navigation-header icon {
+    position: absolute;
+    top: 10rpx;
+    left: 60rpx;
 }
 .nav-item {
     display: inline-block; 
-    font-size: 15px;
-    margin: 5px 5px 0 5px;
-    width: 40px;
-    height: 40px;
+    text-align: center;
+    font-size: 32rpx;
+    margin: 0 28rpx 0 28rpx;
+    height: 58rpx;
+}
+.nav-item-underline {
+    border-bottom: 6rpx solid #ff0000;
+    color: #ff0000;
+}
+.swiper {
+  height: 300rpx;
+}
+/* 微信小程序设置指示点样式的方法 */
+.wx-swiper-dots {
+    position: relative;
+    left: unset !important;
+    /* unset 不继承父级属性 */
+    right: 0;
+}
+.wx-swiper-dots.wx-swiper-dots-horizontal {
+    margin-bottom: -5rpx;
 }
 .classification-icon {
-    width: 90%;
-    margin-left: 5%;
+    position: relative;
+    width: 100%;
+    line-height: 40rpx;
 }
 .classification-lists {
-    overflow: hidden;
+    width: 160%;
+    left: 10px;
 }
 .classification-item {
     display: inline-block;
-    margin-top: 10px;
-    width: 20%;
-    height: 55px;
+    margin-top: 24rpx;
+    width: 12.5%;
+    height: 120rpx;
     text-align: center;
 }
 .classification-item text{
-    font-size: 11px;
+    color: #858484;
+    font-size: 25rpx;
     display: block;
-    width: 46px;
+    width: 120rpx;
     margin: 0 auto;
+}
+.indicator-point {
+    text-align: center;
+    overflow: hidden;
+    line-height: 20rpx;
+}
+.point-box {
+    display: inline-block;
+}
+.point {
+    display: inline-block;
+    width: 26rpx;
+    height: 16rpx;
+    border-radius: 28rpx;
+    margin-right: 10rpx;
+    background-color: #d9d9d9;
+}
+.point-sp {
+    background-color: #ff685e;
+    width: 38rpx;
 }
